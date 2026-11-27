@@ -1,6 +1,6 @@
 import { detect, recommend } from "./engine.js";
 
-const REPO = "kamalbuilds/best-stack";
+const REPO = "kamalbuilds/the-best-stack";
 const SITE = location.origin + location.pathname;
 const $ = (id) => document.getElementById(id);
 const EXAMPLES = [

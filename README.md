@@ -2,10 +2,10 @@
 
 **The AI app stack builders are shipping with in November 2026.** Opinionated defaults for every layer, each pick linked to the thread, post or registry read behind it, and a live table of 95 tools whose versions, stars and model prices regenerate from public APIs.
 
-**Try it:** [kamalbuilds.github.io/best-stack](https://kamalbuilds.github.io/best-stack): type what you're building, get the stack and the reason for every pick.
+**Try it:** [kamalbuilds.github.io/the-best-stack](https://kamalbuilds.github.io/the-best-stack): type what you're building, get the stack and the reason for every pick.
 
-[![refresh](https://github.com/kamalbuilds/best-stack/actions/workflows/refresh.yml/badge.svg)](https://github.com/kamalbuilds/best-stack/actions/workflows/refresh.yml)
-[![stars](https://img.shields.io/github/stars/kamalbuilds/best-stack?style=social)](https://github.com/kamalbuilds/best-stack/stargazers)
+[![refresh](https://github.com/kamalbuilds/the-best-stack/actions/workflows/refresh.yml/badge.svg)](https://github.com/kamalbuilds/the-best-stack/actions/workflows/refresh.yml)
+[![stars](https://img.shields.io/github/stars/kamalbuilds/the-best-stack?style=social)](https://github.com/kamalbuilds/the-best-stack/stargazers)
 
 Sources for this edition: 210 X posts from October 15 to November 27 read with a signed-in client, top-of-month threads from ten subreddits, Hacker News front-page stories since September 15, the [Stack Overflow 2026 AI survey](https://survey.stackoverflow.co/2026/ai), and the GitHub, npm, PyPI and OpenRouter APIs.
 
