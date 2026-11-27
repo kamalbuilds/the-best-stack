@@ -1,0 +1,74 @@
+[
+  {
+    "tier": "Frontier",
+    "id": "anthropic/claude-fable-5.2"
+  },
+  {
+    "tier": "Frontier",
+    "id": "anthropic/claude-opus-5.5"
+  },
+  {
+    "tier": "Frontier",
+    "id": "openai/gpt-6.2-astra"
+  },
+  {
+    "tier": "Frontier",
+    "id": "google/gemini-4-neon"
+  },
+  {
+    "tier": "Workhorse",
+    "id": "anthropic/claude-sonnet-5.5"
+  },
+  {
+    "tier": "Workhorse",
+    "id": "openai/gpt-6.2-sol"
+  },
+  {
+    "tier": "Workhorse",
+    "id": "google/gemini-4-carbon"
+  },
+  {
+    "tier": "Workhorse",
+    "id": "google/gemini-4-hydrogen"
+  },
+  {
+    "tier": "Workhorse",
+    "id": "x-ai/grok-4.7"
+  },
+  {
+    "tier": "Workhorse",
+    "id": "qwen/qwen4-max"
+  },
+  {
+    "tier": "Fast and cheap",
+    "id": "anthropic/claude-haiku-5.5"
+  },
+  {
+    "tier": "Fast and cheap",
+    "id": "openai/gpt-6-luna"
+  },
+  {
+    "tier": "Fast and cheap",
+    "id": "google/gemini-3.8-flash"
+  },
+  {
+    "tier": "Fast and cheap",
+    "id": "deepseek/deepseek-v4.1-flash"
+  },
+  {
+    "tier": "Open-weight labs",
+    "id": "moonshotai/kimi-k3.1-pro"
+  },
+  {
+    "tier": "Open-weight labs",
+    "id": "z-ai/glm-5.3"
+  },
+  {
+    "tier": "Open-weight labs",
+    "id": "deepseek/deepseek-v4-pro"
+  },
+  {
+    "tier": "Open-weight labs",
+    "id": "google/gemma-4-31b-it"
+  }
+]

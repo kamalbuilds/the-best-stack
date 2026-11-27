@@ -1,0 +1,555 @@
+[
+  {
+    "layer": "Frontend",
+    "name": "Next.js",
+    "repo": "vercel/next.js",
+    "package": "npm:next"
+  },
+  {
+    "layer": "Frontend",
+    "name": "TanStack Start",
+    "repo": "TanStack/router",
+    "package": "npm:@tanstack/react-start"
+  },
+  {
+    "layer": "Frontend",
+    "name": "Astro",
+    "repo": "withastro/astro",
+    "package": "npm:astro"
+  },
+  {
+    "layer": "Frontend",
+    "name": "SvelteKit",
+    "repo": "sveltejs/kit",
+    "package": "npm:@sveltejs/kit"
+  },
+  {
+    "layer": "UI",
+    "name": "Tailwind CSS",
+    "repo": "tailwindlabs/tailwindcss",
+    "package": "npm:tailwindcss"
+  },
+  {
+    "layer": "UI",
+    "name": "shadcn/ui",
+    "repo": "shadcn-ui/ui",
+    "package": "npm:shadcn"
+  },
+  {
+    "layer": "UI",
+    "name": "assistant-ui",
+    "repo": "assistant-ui/assistant-ui",
+    "package": "npm:@assistant-ui/react"
+  },
+  {
+    "layer": "UI",
+    "name": "CopilotKit",
+    "repo": "CopilotKit/CopilotKit",
+    "package": "npm:@copilotkit/react-core"
+  },
+  {
+    "layer": "AI SDK",
+    "name": "AI SDK",
+    "repo": "vercel/ai",
+    "package": "npm:ai"
+  },
+  {
+    "layer": "AI SDK",
+    "name": "TanStack AI",
+    "repo": "TanStack/ai",
+    "package": "npm:@tanstack/ai"
+  },
+  {
+    "layer": "AI SDK",
+    "name": "Pydantic AI",
+    "repo": "pydantic/pydantic-ai",
+    "package": "pypi:pydantic-ai"
+  },
+  {
+    "layer": "Agents",
+    "name": "LangGraph",
+    "repo": "langchain-ai/langgraph",
+    "package": "pypi:langgraph"
+  },
+  {
+    "layer": "Agents",
+    "name": "LangGraph.js",
+    "repo": "langchain-ai/langgraphjs",
+    "package": "npm:@langchain/langgraph"
+  },
+  {
+    "layer": "Agents",
+    "name": "Deep Agents",
+    "repo": "langchain-ai/deepagents",
+    "package": "pypi:deepagents"
+  },
+  {
+    "layer": "Agents",
+    "name": "Mastra",
+    "repo": "mastra-ai/mastra",
+    "package": "npm:@mastra/core"
+  },
+  {
+    "layer": "Agents",
+    "name": "OpenAI Agents SDK",
+    "repo": "openai/openai-agents-python",
+    "package": "pypi:openai-agents"
+  },
+  {
+    "layer": "Agents",
+    "name": "Claude Agent SDK",
+    "repo": "anthropics/claude-agent-sdk-python",
+    "package": "pypi:claude-agent-sdk"
+  },
+  {
+    "layer": "Agents",
+    "name": "Google ADK",
+    "repo": "google/adk-python",
+    "package": "pypi:google-adk"
+  },
+  {
+    "layer": "Agents",
+    "name": "Cloudflare Agents",
+    "repo": "cloudflare/agents",
+    "package": "npm:agents"
+  },
+  {
+    "layer": "Agents",
+    "name": "Agno",
+    "repo": "agno-agi/agno",
+    "package": "pypi:agno"
+  },
+  {
+    "layer": "Agents",
+    "name": "smolagents",
+    "repo": "huggingface/smolagents",
+    "package": "pypi:smolagents"
+  },
+  {
+    "layer": "Agents",
+    "name": "CrewAI",
+    "repo": "crewAIInc/crewAI",
+    "package": "pypi:crewai"
+  },
+  {
+    "layer": "Agents",
+    "name": "DSPy",
+    "repo": "stanfordnlp/dspy",
+    "package": "pypi:dspy"
+  },
+  {
+    "layer": "Protocols",
+    "name": "MCP TypeScript SDK",
+    "repo": "modelcontextprotocol/typescript-sdk",
+    "package": "npm:@modelcontextprotocol/sdk"
+  },
+  {
+    "layer": "Protocols",
+    "name": "AG-UI",
+    "repo": "ag-ui-protocol/ag-ui",
+    "package": "npm:@ag-ui/core"
+  },
+  {
+    "layer": "Protocols",
+    "name": "A2A",
+    "repo": "a2aproject/A2A",
+    "package": "pypi:a2a-sdk"
+  },
+  {
+    "layer": "Protocols",
+    "name": "Agent Skills",
+    "repo": "anthropics/skills"
+  },
+  {
+    "layer": "Durable execution",
+    "name": "Workflow SDK",
+    "repo": "vercel/workflow",
+    "package": "npm:workflow"
+  },
+  {
+    "layer": "Durable execution",
+    "name": "Trigger.dev",
+    "repo": "triggerdotdev/trigger.dev",
+    "package": "npm:@trigger.dev/sdk"
+  },
+  {
+    "layer": "Durable execution",
+    "name": "Inngest",
+    "repo": "inngest/inngest",
+    "package": "npm:inngest"
+  },
+  {
+    "layer": "Durable execution",
+    "name": "Temporal",
+    "repo": "temporalio/temporal",
+    "package": "npm:@temporalio/client"
+  },
+  {
+    "layer": "Durable execution",
+    "name": "Restate",
+    "repo": "restatedev/restate",
+    "package": "npm:@restatedev/restate-sdk"
+  },
+  {
+    "layer": "Durable execution",
+    "name": "DBOS",
+    "repo": "dbos-inc/dbos-transact-py",
+    "package": "pypi:dbos"
+  },
+  {
+    "layer": "Sandboxes",
+    "name": "E2B",
+    "repo": "e2b-dev/E2B",
+    "package": "npm:e2b"
+  },
+  {
+    "layer": "Browser agents",
+    "name": "Browser Use",
+    "repo": "browser-use/browser-use",
+    "package": "pypi:browser-use"
+  },
+  {
+    "layer": "Browser agents",
+    "name": "Stagehand",
+    "repo": "browserbase/stagehand",
+    "package": "npm:@browserbasehq/stagehand"
+  },
+  {
+    "layer": "Browser agents",
+    "name": "agent-browser",
+    "repo": "vercel-labs/agent-browser",
+    "package": "npm:agent-browser"
+  },
+  {
+    "layer": "Browser agents",
+    "name": "Chrome DevTools MCP",
+    "repo": "ChromeDevTools/chrome-devtools-mcp",
+    "package": "npm:chrome-devtools-mcp"
+  },
+  {
+    "layer": "Web data",
+    "name": "Firecrawl",
+    "repo": "firecrawl/firecrawl",
+    "package": "npm:@mendable/firecrawl-js"
+  },
+  {
+    "layer": "Web data",
+    "name": "Docling",
+    "repo": "docling-project/docling",
+    "package": "pypi:docling"
+  },
+  {
+    "layer": "Memory",
+    "name": "Mem0",
+    "repo": "mem0ai/mem0",
+    "package": "pypi:mem0ai"
+  },
+  {
+    "layer": "Memory",
+    "name": "Graphiti",
+    "repo": "getzep/graphiti",
+    "package": "pypi:graphiti-core"
+  },
+  {
+    "layer": "Memory",
+    "name": "Letta",
+    "repo": "letta-ai/letta",
+    "package": "pypi:letta"
+  },
+  {
+    "layer": "Memory",
+    "name": "cognee",
+    "repo": "topoteretes/cognee",
+    "package": "pypi:cognee"
+  },
+  {
+    "layer": "Backend",
+    "name": "Hono",
+    "repo": "honojs/hono",
+    "package": "npm:hono"
+  },
+  {
+    "layer": "Backend",
+    "name": "FastAPI",
+    "repo": "fastapi/fastapi",
+    "package": "pypi:fastapi"
+  },
+  {
+    "layer": "Data",
+    "name": "Supabase",
+    "repo": "supabase/supabase",
+    "package": "npm:@supabase/supabase-js"
+  },
+  {
+    "layer": "Data",
+    "name": "Convex",
+    "repo": "get-convex/convex-backend",
+    "package": "npm:convex"
+  },
+  {
+    "layer": "Data",
+    "name": "Drizzle ORM",
+    "repo": "drizzle-team/drizzle-orm",
+    "package": "npm:drizzle-orm"
+  },
+  {
+    "layer": "Data",
+    "name": "Prisma",
+    "repo": "prisma/prisma",
+    "package": "npm:prisma"
+  },
+  {
+    "layer": "Data",
+    "name": "PGlite",
+    "repo": "electric-sql/pglite",
+    "package": "npm:@electric-sql/pglite"
+  },
+  {
+    "layer": "Auth",
+    "name": "Better Auth",
+    "repo": "better-auth/better-auth",
+    "package": "npm:better-auth"
+  },
+  {
+    "layer": "Retrieval",
+    "name": "pgvector",
+    "repo": "pgvector/pgvector"
+  },
+  {
+    "layer": "Retrieval",
+    "name": "pg_vectorsearch",
+    "repo": "timescale/pg_vectorsearch"
+  },
+  {
+    "layer": "Retrieval",
+    "name": "Qdrant",
+    "repo": "qdrant/qdrant",
+    "package": "pypi:qdrant-client"
+  },
+  {
+    "layer": "Retrieval",
+    "name": "LanceDB",
+    "repo": "lancedb/lancedb",
+    "package": "pypi:lancedb"
+  },
+  {
+    "layer": "Retrieval",
+    "name": "Weaviate",
+    "repo": "weaviate/weaviate",
+    "package": "pypi:weaviate-client"
+  },
+  {
+    "layer": "Retrieval",
+    "name": "Milvus",
+    "repo": "milvus-io/milvus",
+    "package": "pypi:pymilvus"
+  },
+  {
+    "layer": "Retrieval",
+    "name": "Chroma",
+    "repo": "chroma-core/chroma",
+    "package": "pypi:chromadb"
+  },
+  {
+    "layer": "Retrieval",
+    "name": "LlamaIndex",
+    "repo": "run-llama/llama_index",
+    "package": "pypi:llama-index"
+  },
+  {
+    "layer": "Gateways",
+    "name": "LiteLLM",
+    "repo": "BerriAI/litellm",
+    "package": "pypi:litellm"
+  },
+  {
+    "layer": "Gateways",
+    "name": "Portkey Gateway",
+    "repo": "Portkey-AI/gateway",
+    "package": "npm:@portkey-ai/gateway"
+  },
+  {
+    "layer": "Local inference",
+    "name": "llama.cpp",
+    "repo": "ggml-org/llama.cpp"
+  },
+  {
+    "layer": "Local inference",
+    "name": "Ollama",
+    "repo": "ollama/ollama"
+  },
+  {
+    "layer": "Local inference",
+    "name": "vLLM",
+    "repo": "vllm-project/vllm",
+    "package": "pypi:vllm"
+  },
+  {
+    "layer": "Local inference",
+    "name": "SGLang",
+    "repo": "sgl-project/sglang",
+    "package": "pypi:sglang"
+  },
+  {
+    "layer": "Local inference",
+    "name": "MLX LM",
+    "repo": "ml-explore/mlx-lm",
+    "package": "pypi:mlx-lm"
+  },
+  {
+    "layer": "Local inference",
+    "name": "Unsloth",
+    "repo": "unslothai/unsloth",
+    "package": "pypi:unsloth"
+  },
+  {
+    "layer": "Observability",
+    "name": "Langfuse",
+    "repo": "langfuse/langfuse",
+    "package": "npm:langfuse"
+  },
+  {
+    "layer": "Observability",
+    "name": "Opik",
+    "repo": "comet-ml/opik",
+    "package": "pypi:opik"
+  },
+  {
+    "layer": "Observability",
+    "name": "Arize Phoenix",
+    "repo": "Arize-ai/phoenix",
+    "package": "pypi:arize-phoenix"
+  },
+  {
+    "layer": "Observability",
+    "name": "Pydantic Logfire",
+    "repo": "pydantic/logfire",
+    "package": "pypi:logfire"
+  },
+  {
+    "layer": "Observability",
+    "name": "Sentry",
+    "repo": "getsentry/sentry",
+    "package": "npm:@sentry/nextjs"
+  },
+  {
+    "layer": "Evals",
+    "name": "promptfoo",
+    "repo": "promptfoo/promptfoo",
+    "package": "npm:promptfoo"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "Claude Code",
+    "repo": "anthropics/claude-code",
+    "package": "npm:@anthropic-ai/claude-code"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "Codex CLI",
+    "repo": "openai/codex",
+    "package": "npm:@openai/codex"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "OpenCode",
+    "repo": "anomalyco/opencode",
+    "package": "npm:opencode-ai"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "Pi",
+    "repo": "earendil-works/pi"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "Gemini CLI",
+    "repo": "google-gemini/gemini-cli",
+    "package": "npm:@google/gemini-cli"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "Qwen Code",
+    "repo": "QwenLM/qwen-code",
+    "package": "npm:@qwen-code/qwen-code"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "Cline",
+    "repo": "cline/cline"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "Kilo Code",
+    "repo": "Kilo-Org/kilocode"
+  },
+  {
+    "layer": "Coding agents",
+    "name": "DeepSeek Harness",
+    "repo": "deepseek-ai/deepseek-harness"
+  },
+  {
+    "layer": "Agent skills",
+    "name": "Superpowers",
+    "repo": "obra/superpowers"
+  },
+  {
+    "layer": "Agent skills",
+    "name": "mattpocock/skills",
+    "repo": "mattpocock/skills"
+  },
+  {
+    "layer": "Agent skills",
+    "name": "Modern Web Guidance",
+    "repo": "GoogleChrome/modern-web-guidance"
+  },
+  {
+    "layer": "Local runtime",
+    "name": "Kiri",
+    "repo": "libracoder/kiri"
+  },
+  {
+    "layer": "Local runtime",
+    "name": "OrbStack",
+    "repo": "orbstack/orbstack"
+  },
+  {
+    "layer": "Local runtime",
+    "name": "Colima",
+    "repo": "abiosoft/colima"
+  },
+  {
+    "layer": "Local runtime",
+    "name": "Podman",
+    "repo": "containers/podman"
+  },
+  {
+    "layer": "Hosting",
+    "name": "Coolify",
+    "repo": "coollabsio/coolify"
+  },
+  {
+    "layer": "Tooling",
+    "name": "Bun",
+    "repo": "oven-sh/bun",
+    "package": "npm:bun"
+  },
+  {
+    "layer": "Tooling",
+    "name": "uv",
+    "repo": "astral-sh/uv",
+    "package": "pypi:uv"
+  },
+  {
+    "layer": "Tooling",
+    "name": "Biome",
+    "repo": "biomejs/biome",
+    "package": "npm:@biomejs/biome"
+  },
+  {
+    "layer": "Tooling",
+    "name": "Vitest",
+    "repo": "vitest-dev/vitest",
+    "package": "npm:vitest"
+  }
+]
