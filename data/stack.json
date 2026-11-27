@@ -1,0 +1,864 @@
+{
+  "signals": {
+    "chat": {
+      "label": "chat",
+      "words": [
+        "chat",
+        "chatbot",
+        "assistant",
+        "conversation",
+        "q&a",
+        "answers questions",
+        "ask questions",
+        "support bot",
+        "helpdesk",
+        "customer support"
+      ]
+    },
+    "docs": {
+      "label": "documents",
+      "words": [
+        "pdf",
+        "document",
+        "docs",
+        "knowledge base",
+        "wiki",
+        "notion",
+        "files",
+        "contract",
+        "manual",
+        "handbook",
+        "policies",
+        "rag",
+        "search my",
+        "search across",
+        "research papers",
+        "transcripts"
+      ]
+    },
+    "agent": {
+      "label": "agent",
+      "words": [
+        "agent",
+        "automate",
+        "automation",
+        "workflow",
+        "autonomous",
+        "on its own",
+        "takes actions",
+        "inbox",
+        "triage",
+        "book",
+        "drafts replies",
+        "operator"
+      ]
+    },
+    "background": {
+      "label": "runs in background",
+      "words": [
+        "daily",
+        "every day",
+        "every morning",
+        "nightly",
+        "cron",
+        "schedule",
+        "recurring",
+        "background",
+        "monitor",
+        "watch",
+        "alert",
+        "24/7",
+        "overnight",
+        "weekly",
+        "keeps track"
+      ]
+    },
+    "code": {
+      "label": "runs code",
+      "words": [
+        "run code",
+        "execute code",
+        "code interpreter",
+        "data analysis",
+        "analyze data",
+        "analyse data",
+        "csv",
+        "spreadsheet",
+        "excel",
+        "sql",
+        "charts",
+        "notebook",
+        "coding",
+        "developer tool",
+        "generates code"
+      ]
+    },
+    "web": {
+      "label": "web data",
+      "words": [
+        "scrape",
+        "crawl",
+        "website",
+        "web page",
+        "browse",
+        "competitor",
+        "price",
+        "news",
+        "research the web",
+        "search the web",
+        "online listings",
+        "job posts"
+      ]
+    },
+    "browser": {
+      "label": "clicks through sites",
+      "words": [
+        "fill forms",
+        "fill out",
+        "click",
+        "log in to",
+        "login to",
+        "books appointments",
+        "checkout",
+        "navigate websites",
+        "browser"
+      ]
+    },
+    "voice": {
+      "label": "voice",
+      "words": [
+        "voice",
+        "phone call",
+        "calls",
+        "speak",
+        "speech",
+        "audio",
+        "talk to",
+        "podcast",
+        "transcribe",
+        "receptionist"
+      ]
+    },
+    "mobile": {
+      "label": "mobile app",
+      "words": [
+        "mobile",
+        "ios",
+        "android",
+        "iphone",
+        "app store",
+        "play store",
+        "react native",
+        "expo",
+        "on my phone"
+      ]
+    },
+    "local": {
+      "label": "private / local",
+      "words": [
+        "offline",
+        "local",
+        "on-device",
+        "on device",
+        "self-host",
+        "self host",
+        "private",
+        "privacy",
+        "hipaa",
+        "air-gapped",
+        "on-prem",
+        "my own machine",
+        "no cloud"
+      ]
+    },
+    "python": {
+      "label": "Python",
+      "words": [
+        "python",
+        "fastapi",
+        "django",
+        "pandas",
+        "jupyter",
+        "pytorch",
+        "scikit",
+        "data science",
+        "ml model"
+      ]
+    },
+    "realtime": {
+      "label": "realtime",
+      "words": [
+        "realtime",
+        "real-time",
+        "multiplayer",
+        "collaborative",
+        "live updates",
+        "shared board",
+        "together in"
+      ]
+    },
+    "payments": {
+      "label": "paid product",
+      "words": [
+        "saas",
+        "subscription",
+        "paid",
+        "pricing",
+        "payments",
+        "marketplace",
+        "stripe",
+        "charge",
+        "billing",
+        "sell"
+      ]
+    },
+    "media": {
+      "label": "images / video",
+      "words": [
+        "image",
+        "photo",
+        "picture",
+        "video",
+        "vision",
+        "camera",
+        "screenshot",
+        "ocr",
+        "receipt",
+        "scan"
+      ]
+    },
+    "memory": {
+      "label": "remembers users",
+      "words": [
+        "remember",
+        "memory",
+        "personal",
+        "companion",
+        "journal",
+        "coach",
+        "tutor",
+        "therapist",
+        "habit",
+        "mentor",
+        "friend"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "mobile"
+            ]
+          },
+          "name": "Expo (React Native)",
+          "why": "One codebase for iOS and Android, and the AI SDK runs in Expo.",
+          "link": "https://expo.dev"
+        },
+        {
+          "name": "Next.js 16 + Tailwind + shadcn/ui",
+          "why": "The default web stack, and the one coding agents write best.",
+          "link": "https://github.com/vercel/next.js",
+          "repo": "vercel/next.js"
+        }
+      ]
+    },
+    {
+      "id": "chatui",
+      "name": "Chat UI",
+      "include": {
+        "any": [
+          "chat",
+          "agent",
+          "voice",
+          "docs",
+          "memory"
+        ]
+      },
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "agent"
+            ],
+            "none": [
+              "mobile"
+            ]
+          },
+          "name": "AI SDK UI + CopilotKit",
+          "why": "Streaming chat plus agent state and approvals in the UI, over the AG-UI protocol.",
+          "link": "https://github.com/CopilotKit/CopilotKit",
+          "repo": "CopilotKit/CopilotKit"
+        },
+        {
+          "when": {
+            "none": [
+              "mobile"
+            ]
+          },
+          "name": "AI SDK UI + assistant-ui",
+          "why": "useChat for streaming, assistant-ui for a finished chat surface instead of building one.",
+          "link": "https://github.com/assistant-ui/assistant-ui",
+          "repo": "assistant-ui/assistant-ui"
+        },
+        {
+          "name": "AI SDK useChat in Expo",
+          "why": "The same streaming hooks as the web, inside your React Native screens.",
+          "link": "https://ai-sdk.dev/docs/getting-started/expo"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI layer",
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "python"
+            ]
+          },
+          "name": "Pydantic AI",
+          "why": "Typed agents and validated outputs for any model provider.",
+          "link": "https://github.com/pydantic/pydantic-ai",
+          "repo": "pydantic/pydantic-ai"
+        },
+        {
+          "name": "AI SDK 7",
+          "why": "One API for every model, with tool calls, approvals and durable agents built in.",
+          "link": "https://vercel.com/blog/ai-sdk-7",
+          "repo": "vercel/ai"
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "python"
+            ]
+          },
+          "name": "FastAPI",
+          "why": "The Python web framework most AI backends use.",
+          "link": "https://github.com/fastapi/fastapi",
+          "repo": "fastapi/fastapi"
+        },
+        {
+          "when": {
+            "any": [
+              "mobile"
+            ]
+          },
+          "name": "Hono on Vercel or Cloudflare",
+          "why": "A small TypeScript API for your app to call, so keys never ship in the binary.",
+          "link": "https://github.com/honojs/hono",
+          "repo": "honojs/hono"
+        },
+        {
+          "name": "Next.js route handlers and server actions",
+          "why": "No separate server until you need one.",
+          "link": "https://nextjs.org/docs/app/building-your-application/routing/route-handlers"
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "name": "Agent loop",
+      "include": {
+        "any": [
+          "agent",
+          "code",
+          "web",
+          "browser",
+          "background"
+        ]
+      },
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "python"
+            ]
+          },
+          "name": "Pydantic AI agent, LangGraph when it branches",
+          "why": "Start with one loop: a model, a few tools, a schedule. Move to a graph when a real branch shows up.",
+          "link": "https://github.com/langchain-ai/langgraph",
+          "repo": "langchain-ai/langgraph"
+        },
+        {
+          "when": {
+            "all": [
+              "agent",
+              "memory"
+            ]
+          },
+          "name": "Mastra",
+          "why": "Agents, workflows, memory and evals in one TypeScript framework.",
+          "link": "https://github.com/mastra-ai/mastra",
+          "repo": "mastra-ai/mastra"
+        },
+        {
+          "name": "AI SDK ToolLoopAgent, Mastra when it grows",
+          "why": "Most production agents are a scheduled job with a model and a few tools. Start there.",
+          "link": "https://reddit.com/r/AI_Agents/comments/1y3j3wz/uncomfortable_truth_most_ai_agents_ive_seen_in/"
+        }
+      ]
+    },
+    {
+      "id": "durable",
+      "name": "Durable execution",
+      "include": {
+        "any": [
+          "background",
+          "agent"
+        ]
+      },
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "python"
+            ]
+          },
+          "name": "DBOS",
+          "why": "Durable steps as a Python library: restarts resume where they stopped.",
+          "link": "https://github.com/dbos-inc/dbos-transact-py",
+          "repo": "dbos-inc/dbos-transact-py"
+        },
+        {
+          "when": {
+            "any": [
+              "background"
+            ]
+          },
+          "name": "Trigger.dev",
+          "why": "Schedules, retries and long runs without managing workers.",
+          "link": "https://github.com/triggerdotdev/trigger.dev",
+          "repo": "triggerdotdev/trigger.dev"
+        },
+        {
+          "name": "Workflow SDK",
+          "why": "Steps that survive restarts, retries and waiting for a human.",
+          "link": "https://github.com/vercel/workflow",
+          "repo": "vercel/workflow"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "include": {
+        "any": [
+          "agent"
+        ]
+      },
+      "picks": [
+        {
+          "name": "MCP",
+          "why": "Connect existing tools instead of writing integrations. Use Code Mode for big APIs.",
+          "link": "https://github.com/modelcontextprotocol/typescript-sdk",
+          "repo": "modelcontextprotocol/typescript-sdk"
+        }
+      ]
+    },
+    {
+      "id": "sandbox",
+      "name": "Code sandbox",
+      "include": {
+        "any": [
+          "code"
+        ]
+      },
+      "picks": [
+        {
+          "name": "E2B",
+          "why": "Run model-written code in a sandbox, never on your server.",
+          "link": "https://github.com/e2b-dev/E2B",
+          "repo": "e2b-dev/E2B"
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "name": "Web data",
+      "include": {
+        "any": [
+          "web",
+          "browser"
+        ]
+      },
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "browser"
+            ]
+          },
+          "name": "Browser Use",
+          "why": "An agent that clicks, types and logs in like a person.",
+          "link": "https://github.com/browser-use/browser-use",
+          "repo": "browser-use/browser-use"
+        },
+        {
+          "name": "Firecrawl",
+          "why": "Search, scrape and crawl into clean Markdown for the model.",
+          "link": "https://github.com/firecrawl/firecrawl",
+          "repo": "firecrawl/firecrawl"
+        }
+      ]
+    },
+    {
+      "id": "ingest",
+      "name": "Documents in",
+      "include": {
+        "any": [
+          "docs"
+        ]
+      },
+      "picks": [
+        {
+          "name": "Docling",
+          "why": "Turns PDFs, Word files, slides and tables into clean structured text.",
+          "link": "https://github.com/docling-project/docling",
+          "repo": "docling-project/docling"
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "name": "Database and auth",
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "local"
+            ]
+          },
+          "name": "Self-hosted Postgres + Better Auth",
+          "why": "Everything stays on hardware you control.",
+          "link": "https://github.com/better-auth/better-auth",
+          "repo": "better-auth/better-auth"
+        },
+        {
+          "when": {
+            "any": [
+              "realtime"
+            ]
+          },
+          "name": "Convex",
+          "why": "Reactive queries push changes to every client without extra plumbing.",
+          "link": "https://github.com/get-convex/convex-backend",
+          "repo": "get-convex/convex-backend"
+        },
+        {
+          "name": "Supabase",
+          "why": "Postgres, auth, storage and pgvector in one place.",
+          "link": "https://github.com/supabase/supabase",
+          "repo": "supabase/supabase"
+        }
+      ]
+    },
+    {
+      "id": "retrieval",
+      "name": "Retrieval",
+      "include": {
+        "any": [
+          "docs"
+        ]
+      },
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "local"
+            ]
+          },
+          "name": "LanceDB",
+          "why": "Embedded vector search that runs on the device, no server.",
+          "link": "https://github.com/lancedb/lancedb",
+          "repo": "lancedb/lancedb"
+        },
+        {
+          "name": "Postgres hybrid search + a reranker",
+          "why": "pgvector and full text side by side, fused, then reranked. Turn on iterative scans or filters drop results.",
+          "link": "https://github.com/pgvector/pgvector#iterative-index-scans",
+          "repo": "pgvector/pgvector"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "name": "Memory",
+      "include": {
+        "any": [
+          "memory"
+        ]
+      },
+      "picks": [
+        {
+          "name": "A profile row and a running summary in Postgres, Mem0 at scale",
+          "why": "Most apps only need to remember a few facts per user. Add Mem0 when that stops being enough.",
+          "link": "https://github.com/mem0ai/mem0",
+          "repo": "mem0ai/mem0"
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "name": "Voice",
+      "include": {
+        "any": [
+          "voice"
+        ]
+      },
+      "picks": [
+        {
+          "name": "LiveKit Agents",
+          "why": "Realtime voice agents over WebRTC and phone lines.",
+          "link": "https://github.com/livekit/agents",
+          "repo": "livekit/agents"
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "name": "Models",
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "local"
+            ]
+          },
+          "name": "Open weights: Kimi K3.1, Qwen, Gemma 4",
+          "why": "Close enough to the frontier now that teams self-host to cut cost.",
+          "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+        },
+        {
+          "when": {
+            "any": [
+              "media"
+            ]
+          },
+          "name": "Gemini 4 for vision, Claude Sonnet 5.5 for reasoning",
+          "why": "Gemini reads images and video well; route the thinking to the model that plans best.",
+          "link": "https://openrouter.ai/models"
+        },
+        {
+          "name": "Claude Sonnet 5.5 to think, a cheap model for bulk",
+          "why": "Frontier model for planning, Haiku 5.5 or DeepSeek V4.1 Flash for the high-volume calls.",
+          "link": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "gateway",
+      "name": "Model gateway",
+      "include": {
+        "none": [
+          "local"
+        ]
+      },
+      "picks": [
+        {
+          "name": "OpenRouter or Vercel AI Gateway",
+          "why": "One key, one bill, failover between providers.",
+          "link": "https://openrouter.ai"
+        }
+      ]
+    },
+    {
+      "id": "inference",
+      "name": "Local inference",
+      "include": {
+        "any": [
+          "local"
+        ]
+      },
+      "picks": [
+        {
+          "name": "llama.cpp or Ollama",
+          "why": "llama.cpp just shipped 1.0. Use MLX on Apple silicon, vLLM to serve many users.",
+          "link": "https://github.com/ggml-org/llama.cpp",
+          "repo": "ggml-org/llama.cpp"
+        }
+      ]
+    },
+    {
+      "id": "payments",
+      "name": "Payments",
+      "include": {
+        "any": [
+          "payments"
+        ]
+      },
+      "picks": [
+        {
+          "name": "Stripe",
+          "why": "Subscriptions, usage billing and payouts.",
+          "link": "https://stripe.com/docs"
+        }
+      ]
+    },
+    {
+      "id": "observability",
+      "name": "Traces and errors",
+      "picks": [
+        {
+          "name": "Langfuse + Sentry",
+          "why": "See every model call and tool step, and every crash.",
+          "link": "https://github.com/langfuse/langfuse",
+          "repo": "langfuse/langfuse"
+        }
+      ]
+    },
+    {
+      "id": "evals",
+      "name": "Evals",
+      "include": {
+        "any": [
+          "agent",
+          "docs",
+          "chat"
+        ]
+      },
+      "picks": [
+        {
+          "name": "promptfoo in CI",
+          "why": "A test suite for prompts that runs on every pull request.",
+          "link": "https://github.com/promptfoo/promptfoo",
+          "repo": "promptfoo/promptfoo"
+        }
+      ]
+    },
+    {
+      "id": "hosting",
+      "name": "Hosting",
+      "picks": [
+        {
+          "when": {
+            "any": [
+              "mobile"
+            ]
+          },
+          "name": "EAS for the app, Vercel for the API",
+          "why": "Build and ship to both stores from one command.",
+          "link": "https://expo.dev/eas"
+        },
+        {
+          "when": {
+            "any": [
+              "local"
+            ]
+          },
+          "name": "Your own machine, or Coolify on a server",
+          "why": "Self-hosted deploys without a platform bill.",
+          "link": "https://github.com/coollabsio/coolify",
+          "repo": "coollabsio/coolify"
+        },
+        {
+          "name": "Vercel",
+          "why": "Zero-config for Next.js, and Python is GA too.",
+          "link": "https://vercel.com"
+        }
+      ]
+    },
+    {
+      "id": "devloop",
+      "name": "Build it with",
+      "picks": [
+        {
+          "name": "Claude Code + Kiri",
+          "why": "Claude Code leads coding agents at 66% in the Stack Overflow 2026 survey. Kiri runs your containers without Docker Desktop.",
+          "link": "https://github.com/libracoder/kiri",
+          "repo": "libracoder/kiri"
+        }
+      ]
+    }
+  ],
+  "starters": [
+    {
+      "when": {
+        "any": [
+          "mobile"
+        ]
+      },
+      "cmd": "npx create-expo-app@latest my-app"
+    },
+    {
+      "when": {
+        "any": [
+          "python"
+        ]
+      },
+      "cmd": "uv init my-app && cd my-app && uv add fastapi pydantic-ai"
+    },
+    {
+      "when": {
+        "none": [
+          "mobile",
+          "python"
+        ]
+      },
+      "cmd": "npx create-next-app@latest my-app && cd my-app && npx shadcn@latest init"
+    },
+    {
+      "when": {
+        "none": [
+          "python"
+        ]
+      },
+      "cmd": "npm i ai @ai-sdk/react"
+    },
+    {
+      "when": {
+        "none": [
+          "local"
+        ]
+      },
+      "cmd": "npx supabase init"
+    },
+    {
+      "when": {
+        "any": [
+          "background",
+          "agent"
+        ],
+        "none": [
+          "python"
+        ]
+      },
+      "cmd": "npm i workflow"
+    },
+    {
+      "when": {
+        "any": [
+          "agent"
+        ],
+        "none": [
+          "python"
+        ]
+      },
+      "cmd": "npm i @modelcontextprotocol/sdk"
+    },
+    {
+      "when": {
+        "any": [
+          "local"
+        ]
+      },
+      "cmd": "brew install llama.cpp"
+    },
+    {
+      "when": {},
+      "cmd": "brew install --cask libracoder/kiri/kiri"
+    }
+  ]
+}

@@ -47,7 +47,7 @@ const rows = await Promise.all(tools.map(async (t) => {
   try {
     const [repo, v] = await Promise.all([getJson(`https://api.github.com/repos/${t.repo}`, gh), t.package ? version(t.package) : releaseTag(t.repo)]);
     if (repo.archived) failures.push(`${t.name}: ${repo.full_name} is archived`);
-    return { ...t, repo: repo.full_name, stars: repo.stargazers_count, pushed: repo.pushed_at.slice(0, 10), v };
+    return { ...t, key: t.repo, repo: repo.full_name, stars: repo.stargazers_count, pushed: repo.pushed_at.slice(0, 10), v };
   } catch (e) {
     failures.push(`${t.name}: ${e.message}`);
   }
@@ -99,13 +99,18 @@ const modelTable = [
 const next = splice(splice(readme, "stats", table), "models", modelTable);
 
 if (process.argv.includes("--check")) {
-  const strip = (s) => s.replace(/^(Read from|Prices in) .*$/gm, "");
-  if (strip(next) !== strip(readme)) {
-    console.error("README.md stats are stale. Run: node scripts/refresh.mjs");
+  // Compare which tools and models are listed, not the live numbers, which move by the minute.
+  const block = (s, name) => s.slice(s.indexOf(`<!-- ${name}:start -->`), s.indexOf(`<!-- ${name}:end -->`));
+  const shape = (s) => ["stats", "models"].map((n) => block(s, n).split("\n").filter((l) => l.startsWith("| ")).map((l) => l.split("|").slice(1, 4).join("|")).join("\n")).join("\n--\n");
+  const outside = (s) => s.replace(/<!-- (stats|models):start -->[\s\S]*?<!-- \1:end -->/g, "");
+  if (shape(next) !== shape(readme) || outside(next) !== outside(readme)) {
+    console.error("README.md tool or model tables are out of date. Run: node scripts/refresh.mjs");
     process.exit(1);
   }
   console.log(`stats current for ${rows.length} tools`);
 } else {
   await writeFile(readmeUrl, next);
+  const stats = Object.fromEntries(rows.map((r) => [r.key, { v: r.v || "", stars: r.stars }]));
+  await writeFile(new URL("data/stats.json", root), JSON.stringify(stats, null, 1) + "\n");
   console.log(`wrote stats for ${rows.length} tools`);
 }

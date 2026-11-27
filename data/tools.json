@@ -239,6 +239,12 @@
     "package": "pypi:docling"
   },
   {
+    "layer": "Voice",
+    "name": "LiveKit Agents",
+    "repo": "livekit/agents",
+    "package": "pypi:livekit-agents"
+  },
+  {
     "layer": "Memory",
     "name": "Mem0",
     "repo": "mem0ai/mem0",
