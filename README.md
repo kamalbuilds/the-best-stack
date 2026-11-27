@@ -1,4 +1,4 @@
-# Best Stack
+# The Best Stack (TBS) 
 
 **The AI app stack builders are shipping with in November 2026.** Opinionated defaults for every layer, each pick linked to the thread, post or registry read behind it, and a live table of 95 tools whose versions, stars and model prices regenerate from public APIs.
 
