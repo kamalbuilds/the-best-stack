@@ -106,7 +106,7 @@ Prices in USD per million tokens, read from the [OpenRouter models API](https://
 | Fast and cheap | DeepSeek: DeepSeek V4.1 Flash | `deepseek/deepseek-v4.1-flash` | $0.05 | $0.20 | 1,049k |
 | Open-weight labs | MoonshotAI: Kimi K3.1 Pro | `moonshotai/kimi-k3.1-pro` | $0.24 | $8.40 | 1,049k |
 | Open-weight labs | Z.ai: GLM 5.3 | `z-ai/glm-5.3` | $0.07 | $1.40 | 1,049k |
-| Open-weight labs | DeepSeek: DeepSeek V4 Pro 0423 | `deepseek/deepseek-v4-pro` | $0.86 | $1.52 | 1,049k |
+| Open-weight labs | DeepSeek: DeepSeek V4 Pro 0423 | `deepseek/deepseek-v4-pro` | $0.83 | $1.54 | 1,049k |
 | Open-weight labs | Google: Gemma 4 31B | `google/gemma-4-31b-it` | $0.20 | $0.40 | 262k |
 <!-- models:end -->
 
@@ -119,33 +119,33 @@ Read from the GitHub, npm and PyPI APIs on 2026-11-27 by `scripts/refresh.mjs`.
 
 | Layer | Tool | Latest release | Stars | Last commit |
 |---|---|---|--:|---|
-| Frontend | [Next.js](https://github.com/vercel/next.js) | `16.4.6` | 143,754 | 2026-11-27 |
-| Frontend | [TanStack Start](https://github.com/TanStack/router) | `1.169.7` | 15,380 | 2026-11-27 |
-| Frontend | [Astro](https://github.com/withastro/astro) | `7.4.13` | 64,257 | 2026-11-27 |
+| Frontend | [Next.js](https://github.com/vercel/next.js) | `16.4.6` | 143,755 | 2026-11-27 |
+| Frontend | [TanStack Start](https://github.com/TanStack/router) | `1.169.7` | 15,381 | 2026-11-27 |
+| Frontend | [Astro](https://github.com/withastro/astro) | `7.4.13` | 64,258 | 2026-11-27 |
 | Frontend | [SvelteKit](https://github.com/sveltejs/kit) | `3.4.1` | 20,929 | 2026-11-27 |
-| UI | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | `4.3.5` | 98,873 | 2026-11-27 |
-| UI | [shadcn/ui](https://github.com/shadcn-ui/ui) | `4.23.1` | 129,240 | 2026-11-27 |
-| UI | [assistant-ui](https://github.com/assistant-ui/assistant-ui) | `0.15.38` | 13,452 | 2026-11-27 |
+| UI | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | `4.3.5` | 98,874 | 2026-11-27 |
+| UI | [shadcn/ui](https://github.com/shadcn-ui/ui) | `4.23.1` | 129,243 | 2026-11-27 |
+| UI | [assistant-ui](https://github.com/assistant-ui/assistant-ui) | `0.15.38` | 13,453 | 2026-11-27 |
 | UI | [CopilotKit](https://github.com/CopilotKit/CopilotKit) | `1.90.2` | 39,012 | 2026-11-27 |
 | AI SDK | [AI SDK](https://github.com/vercel/ai) | `7.0.183` | 28,250 | 2026-11-26 |
 | AI SDK | [TanStack AI](https://github.com/TanStack/ai) | `1.8.0` | 3,392 | 2026-11-27 |
 | AI SDK | [Pydantic AI](https://github.com/pydantic/pydantic-ai) | `2.76.0` | 21,427 | 2026-11-27 |
-| Agents | [LangGraph](https://github.com/langchain-ai/langgraph) | `1.2.24` | 45,507 | 2026-11-26 |
+| Agents | [LangGraph](https://github.com/langchain-ai/langgraph) | `1.2.24` | 45,506 | 2026-11-26 |
 | Agents | [LangGraph.js](https://github.com/langchain-ai/langgraphjs) | `1.7.5` | 3,430 | 2026-11-26 |
 | Agents | [Deep Agents](https://github.com/langchain-ai/deepagents) | `0.7.42` | 31,643 | 2026-11-27 |
-| Agents | [Mastra](https://github.com/mastra-ai/mastra) | `1.86.0` | 29,855 | 2026-11-27 |
-| Agents | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | `0.26.0` | 30,896 | 2026-11-27 |
-| Agents | [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) | `0.2.189` | 8,655 | 2026-11-25 |
+| Agents | [Mastra](https://github.com/mastra-ai/mastra) | `1.86.0` | 29,857 | 2026-11-27 |
+| Agents | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | `0.26.0` | 30,900 | 2026-11-27 |
+| Agents | [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) | `0.2.189` | 8,656 | 2026-11-25 |
 | Agents | [Google ADK](https://github.com/google/adk-python) | `2.15.1` | 22,368 | 2026-11-26 |
-| Agents | [Cloudflare Agents](https://github.com/cloudflare/agents) | `0.34.1` | 6,158 | 2026-11-27 |
+| Agents | [Cloudflare Agents](https://github.com/cloudflare/agents) | `0.34.1` | 6,160 | 2026-11-27 |
 | Agents | [Agno](https://github.com/agno-agi/agno) | `3.2.1` | 43,324 | 2026-11-27 |
 | Agents | [smolagents](https://github.com/huggingface/smolagents) | `1.26.0` | 30,568 | 2026-11-26 |
-| Agents | [CrewAI](https://github.com/crewAIInc/crewAI) | `1.15.45` | 61,324 | 2026-11-26 |
+| Agents | [CrewAI](https://github.com/crewAIInc/crewAI) | `1.15.45` | 61,325 | 2026-11-26 |
 | Agents | [DSPy](https://github.com/stanfordnlp/dspy) | `3.5.0` | 39,260 | 2026-11-25 |
 | Protocols | [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) | `1.32.2` | 13,831 | 2026-11-27 |
-| Protocols | [AG-UI](https://github.com/ag-ui-protocol/ag-ui) | `1.0.5` | 21,908 | 2026-11-27 |
+| Protocols | [AG-UI](https://github.com/ag-ui-protocol/ag-ui) | `1.0.5` | 21,914 | 2026-11-27 |
 | Protocols | [A2A](https://github.com/a2aproject/A2A) | `1.3.1` | 26,711 | 2026-11-27 |
-| Protocols | [Agent Skills](https://github.com/anthropics/skills) | rolling | 201,306 | 2026-11-16 |
+| Protocols | [Agent Skills](https://github.com/anthropics/skills) | rolling | 201,319 | 2026-11-16 |
 | Durable execution | [Workflow SDK](https://github.com/vercel/workflow) | `5.8.0` | 2,537 | 2026-11-27 |
 | Durable execution | [Trigger.dev](https://github.com/triggerdotdev/trigger.dev) | `4.8.10` | 16,834 | 2026-11-27 |
 | Durable execution | [Inngest](https://github.com/inngest/inngest) | `4.27.0` | 6,081 | 2026-11-27 |
@@ -153,66 +153,66 @@ Read from the GitHub, npm and PyPI APIs on 2026-11-27 by `scripts/refresh.mjs`.
 | Durable execution | [Restate](https://github.com/restatedev/restate) | `1.18.4` | 4,752 | 2026-11-27 |
 | Durable execution | [DBOS](https://github.com/dbos-inc/dbos-transact-py) | `3.7.0` | 1,706 | 2026-11-26 |
 | Sandboxes | [E2B](https://github.com/e2b-dev/E2B) | `2.66.0` | 15,035 | 2026-11-27 |
-| Browser agents | [Browser Use](https://github.com/browser-use/browser-use) | `1.0.9` | 122,204 | 2026-11-27 |
-| Browser agents | [Stagehand](https://github.com/browserbase/stagehand) | `4.5.0` | 26,167 | 2026-11-26 |
-| Browser agents | [agent-browser](https://github.com/vercel-labs/agent-browser) | `0.45.0` | 54,262 | 2026-11-27 |
-| Browser agents | [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | `1.14.0` | 59,574 | 2026-11-27 |
-| Web data | [Firecrawl](https://github.com/firecrawl/firecrawl) | `4.54.0` | 211,360 | 2026-11-27 |
+| Browser agents | [Browser Use](https://github.com/browser-use/browser-use) | `1.0.9` | 122,206 | 2026-11-27 |
+| Browser agents | [Stagehand](https://github.com/browserbase/stagehand) | `4.5.0` | 26,166 | 2026-11-26 |
+| Browser agents | [agent-browser](https://github.com/vercel-labs/agent-browser) | `0.45.0` | 54,271 | 2026-11-27 |
+| Browser agents | [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | `1.14.0` | 59,577 | 2026-11-27 |
+| Web data | [Firecrawl](https://github.com/firecrawl/firecrawl) | `4.54.0` | 211,387 | 2026-11-27 |
 | Web data | [Docling](https://github.com/docling-project/docling) | `2.154.0` | 71,136 | 2026-11-27 |
-| Memory | [Mem0](https://github.com/mem0ai/mem0) | `2.2.1` | 69,540 | 2026-11-27 |
-| Memory | [Graphiti](https://github.com/getzep/graphiti) | `0.32.1` | 33,140 | 2026-11-26 |
+| Memory | [Mem0](https://github.com/mem0ai/mem0) | `2.2.1` | 69,542 | 2026-11-27 |
+| Memory | [Graphiti](https://github.com/getzep/graphiti) | `0.32.1` | 33,141 | 2026-11-27 |
 | Memory | [Letta](https://github.com/letta-ai/letta) | `0.34.12` | 25,567 | 2026-10-18 |
-| Memory | [cognee](https://github.com/topoteretes/cognee) | `1.6.11` | 33,669 | 2026-11-27 |
-| Backend | [Hono](https://github.com/honojs/hono) | `4.13.23` | 33,117 | 2026-11-26 |
+| Memory | [cognee](https://github.com/topoteretes/cognee) | `1.6.11` | 33,670 | 2026-11-27 |
+| Backend | [Hono](https://github.com/honojs/hono) | `4.13.23` | 33,118 | 2026-11-26 |
 | Backend | [FastAPI](https://github.com/fastapi/fastapi) | `0.165.0` | 105,099 | 2026-11-24 |
 | Data | [Supabase](https://github.com/supabase/supabase) | `2.119.2` | 115,610 | 2026-11-27 |
 | Data | [Convex](https://github.com/convex/convex-backend) | `1.51.0` | 12,816 | 2026-11-27 |
 | Data | [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) | `0.45.4` | 36,422 | 2026-11-25 |
 | Data | [Prisma](https://github.com/prisma/orm) | `8.0.0-rc.36` | 47,775 | 2026-11-27 |
 | Data | [PGlite](https://github.com/electric-sql/pglite) | `0.6.0` | 16,383 | 2026-11-27 |
-| Auth | [Better Auth](https://github.com/better-auth/better-auth) | `1.7.28` | 30,907 | 2026-11-26 |
+| Auth | [Better Auth](https://github.com/better-auth/better-auth) | `1.7.28` | 30,908 | 2026-11-27 |
 | Retrieval | [pgvector](https://github.com/pgvector/pgvector) | rolling | 23,842 | 2026-11-27 |
 | Retrieval | [pg_vectorsearch](https://github.com/timescale/pg_vectorsearch) | `v0.2.0` | 456 | 2026-11-26 |
-| Retrieval | [Qdrant](https://github.com/qdrant/qdrant) | `1.20.0` | 35,741 | 2026-11-27 |
+| Retrieval | [Qdrant](https://github.com/qdrant/qdrant) | `1.20.0` | 35,742 | 2026-11-27 |
 | Retrieval | [LanceDB](https://github.com/lancedb/lancedb) | `0.41.0` | 11,996 | 2026-11-27 |
 | Retrieval | [Weaviate](https://github.com/weaviate/weaviate) | `4.25.0` | 16,970 | 2026-11-27 |
 | Retrieval | [Milvus](https://github.com/milvus-io/milvus) | `3.0.3` | 46,751 | 2026-11-27 |
 | Retrieval | [Chroma](https://github.com/chroma-core/chroma) | `1.5.9` | 29,797 | 2026-11-27 |
 | Retrieval | [LlamaIndex](https://github.com/run-llama/llama_index) | `0.14.26` | 53,024 | 2026-11-26 |
-| Gateways | [LiteLLM](https://github.com/BerriAI/litellm) | `1.111.0` | 64,017 | 2026-11-27 |
+| Gateways | [LiteLLM](https://github.com/BerriAI/litellm) | `1.111.0` | 64,020 | 2026-11-27 |
 | Gateways | [Portkey Gateway](https://github.com/Portkey-AI/gateway) | `1.15.2` | 13,458 | 2026-11-20 |
-| Local inference | [llama.cpp](https://github.com/ggml-org/llama.cpp) | `v1.1.0` | 136,494 | 2026-11-27 |
-| Local inference | [Ollama](https://github.com/ollama/ollama) | `v0.40.18` | 188,296 | 2026-11-27 |
+| Local inference | [llama.cpp](https://github.com/ggml-org/llama.cpp) | `v1.1.0` | 136,496 | 2026-11-27 |
+| Local inference | [Ollama](https://github.com/ollama/ollama) | `v0.40.18` | 188,299 | 2026-11-27 |
 | Local inference | [vLLM](https://github.com/vllm-project/vllm) | `0.34.0` | 97,697 | 2026-11-27 |
-| Local inference | [SGLang](https://github.com/sgl-project/sglang) | `0.5.23` | 39,129 | 2026-11-27 |
+| Local inference | [SGLang](https://github.com/sgl-project/sglang) | `0.5.23` | 39,130 | 2026-11-27 |
 | Local inference | [MLX LM](https://github.com/ml-explore/mlx-lm) | `0.32.2` | 7,775 | 2026-11-24 |
 | Local inference | [Unsloth](https://github.com/unslothai/unsloth) | `2026.11.12` | 80,347 | 2026-11-27 |
 | Observability | [Langfuse](https://github.com/langfuse/langfuse) | `3.39.2` | 37,919 | 2026-11-27 |
 | Observability | [Opik](https://github.com/comet-ml/opik) | `2.3.7` | 23,522 | 2026-11-27 |
-| Observability | [Arize Phoenix](https://github.com/Arize-ai/phoenix) | `22.1.0` | 12,454 | 2026-11-27 |
+| Observability | [Arize Phoenix](https://github.com/Arize-ai/phoenix) | `22.1.0` | 12,455 | 2026-11-27 |
 | Observability | [Pydantic Logfire](https://github.com/pydantic/logfire) | `6.0.1` | 4,570 | 2026-11-27 |
-| Observability | [Sentry](https://github.com/getsentry/sentry) | `11.19.0` | 45,890 | 2026-11-27 |
-| Evals | [promptfoo](https://github.com/promptfoo/promptfoo) | `0.126.0` | 27,741 | 2026-11-27 |
-| Coding agents | [Claude Code](https://github.com/anthropics/claude-code) | `2.1.332` | 157,282 | 2026-11-27 |
-| Coding agents | [Codex CLI](https://github.com/openai/codex) | `0.172.0` | 136,650 | 2026-11-27 |
-| Coding agents | [OpenCode](https://github.com/anomalyco/opencode) | `1.19.6` | 229,558 | 2026-11-27 |
-| Coding agents | [Pi](https://github.com/earendil-works/pi) | `v1.6.1` | 124,233 | 2026-11-27 |
-| Coding agents | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `0.71.1` | 109,229 | 2026-11-27 |
+| Observability | [Sentry](https://github.com/getsentry/sentry) | `11.19.0` | 45,891 | 2026-11-27 |
+| Evals | [promptfoo](https://github.com/promptfoo/promptfoo) | `0.126.0` | 27,743 | 2026-11-27 |
+| Coding agents | [Claude Code](https://github.com/anthropics/claude-code) | `2.1.332` | 157,284 | 2026-11-27 |
+| Coding agents | [Codex CLI](https://github.com/openai/codex) | `0.172.0` | 136,653 | 2026-11-27 |
+| Coding agents | [OpenCode](https://github.com/anomalyco/opencode) | `1.19.6` | 229,564 | 2026-11-27 |
+| Coding agents | [Pi](https://github.com/earendil-works/pi) | `v1.6.1` | 124,244 | 2026-11-27 |
+| Coding agents | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `0.71.1` | 109,231 | 2026-11-27 |
 | Coding agents | [Qwen Code](https://github.com/QwenLM/qwen-code) | `0.28.7` | 30,979 | 2026-11-27 |
-| Coding agents | [Cline](https://github.com/cline/cline) | `v4.1.28` | 71,947 | 2026-11-26 |
+| Coding agents | [Cline](https://github.com/cline/cline) | `v4.1.28` | 71,948 | 2026-11-26 |
 | Coding agents | [Kilo Code](https://github.com/Kilo-Org/kilocode) | `v7.8.40` | 28,143 | 2026-11-27 |
-| Coding agents | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | rolling | 287,935 | 2026-11-22 |
-| Agent skills | [Superpowers](https://github.com/obra/superpowers) | `v7.0.2` | 327,985 | 2026-11-26 |
-| Agent skills | [mattpocock/skills](https://github.com/mattpocock/skills) | `v1.3.2` | 334,025 | 2026-11-25 |
-| Agent skills | [Modern Web Guidance](https://github.com/GoogleChrome/modern-web-guidance) | `v1.0.2` | 26,937 | 2026-11-23 |
-| Local runtime | [Kiri](https://github.com/libracoder/kiri) | `v0.2.2` | 13,967 | 2026-11-27 |
+| Coding agents | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | rolling | 287,942 | 2026-11-22 |
+| Agent skills | [Superpowers](https://github.com/obra/superpowers) | `v7.0.2` | 328,005 | 2026-11-26 |
+| Agent skills | [mattpocock/skills](https://github.com/mattpocock/skills) | `v1.3.2` | 334,047 | 2026-11-25 |
+| Agent skills | [Modern Web Guidance](https://github.com/GoogleChrome/modern-web-guidance) | `v1.0.2` | 26,950 | 2026-11-23 |
+| Local runtime | [Kiri](https://github.com/libracoder/kiri) | `v0.2.2` | 13,971 | 2026-11-27 |
 | Local runtime | [OrbStack](https://github.com/orbstack/orbstack) | rolling | 9,625 | 2025-08-15 |
-| Local runtime | [Colima](https://github.com/abiosoft/colima) | `v0.10.3` | 31,858 | 2026-10-13 |
+| Local runtime | [Colima](https://github.com/abiosoft/colima) | `v0.10.3` | 31,859 | 2026-10-13 |
 | Local runtime | [Podman](https://github.com/podman-container-tools/podman) | `v6.2.1` | 33,407 | 2026-11-27 |
-| Hosting | [Coolify](https://github.com/coollabsio/coolify) | `v4.7.9` | 66,653 | 2026-11-26 |
-| Tooling | [Bun](https://github.com/oven-sh/bun) | `1.4.5` | 97,018 | 2026-11-27 |
+| Hosting | [Coolify](https://github.com/coollabsio/coolify) | `v4.7.9` | 66,656 | 2026-11-26 |
+| Tooling | [Bun](https://github.com/oven-sh/bun) | `1.4.5` | 97,020 | 2026-11-27 |
 | Tooling | [uv](https://github.com/astral-sh/uv) | `0.13.10` | 92,754 | 2026-11-26 |
-| Tooling | [Biome](https://github.com/biomejs/biome) | `2.6.9` | 26,231 | 2026-11-27 |
+| Tooling | [Biome](https://github.com/biomejs/biome) | `2.6.9` | 26,232 | 2026-11-27 |
 | Tooling | [Vitest](https://github.com/vitest-dev/vitest) | `5.1.2` | 17,493 | 2026-11-27 |
 <!-- stats:end -->
 
