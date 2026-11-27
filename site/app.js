@@ -53,7 +53,7 @@ function render() {
         el("a", { class: "better", href: issueUrl(l), target: "_blank", rel: "noopener" }, "better pick?")));
   }));
   $("cardIdea").textContent = idea || "your idea";
-  $("cardGrid").replaceChildren(...layers.flatMap((l) => [el("dt", {}, l.layer), el("dd", {}, l.name.split(/,| \+ | when | and | to /)[0].trim())]));
+  $("cardGrid").replaceChildren(...layers.flatMap((l) => [el("dt", {}, l.layer), el("dd", {}, l.short || l.name)]));
   $("cmds").textContent = starters.join("\n");
   $("result").hidden = false;
   const url = new URL(SITE);
